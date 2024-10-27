@@ -20,11 +20,21 @@ function createProductCard(product) {
     image.src=`${product.image_url}`;
     price=document.createElement("h2");
     price.textContent=`${product.price} Dhs`;
+    description=document.createElement("p");
+    description.textContent=`${product.description}`;
+    description.classList.add('product-info');
+    add_to_cart_btn = document.createElement("button");
+    add_to_cart_btn.textContent ="Add To Cart";
+    add_to_cart_btn.classList.add('atc_button');
+
+    
     
 
     card.appendChild(image);
     card.appendChild(title);
     card.appendChild(price);
+    card.appendChild(description);
+    card.appendChild(add_to_cart_btn);
    
    
     return card;
