@@ -58,13 +58,14 @@ nav div span{
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    
 
 }
 .product-card {
     display: block;
     width: 22%;
     height: auto;
-    margin: 10x;
+    margin: 10px;
     padding: 10px;
     border: solid 1px rgb(235, 235, 235);
     border-radius: 15px;
@@ -76,7 +77,6 @@ nav div span{
 
 
 .product-card img {
-    
     background-color: #f9f9f9;
     border-radius: 15px;
     width: 100%;
@@ -89,7 +89,7 @@ nav div span{
     margin: 10px 10px 10px 0;
     opacity: 80%;
     height: 150px;
-    width: fit-content;
+    
 }
 
 .product-card h1 {
@@ -101,7 +101,7 @@ nav div span{
 }
 .product-card h2 {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     font-size: 1.2rem;
     margin-bottom: 15px;
     color: #333;
@@ -111,7 +111,7 @@ nav div span{
 
 
 
-.atc_button {
+.atc_button{
     padding: 10px;
     background-color: #6F4E37; 
     color: white;
@@ -119,9 +119,7 @@ nav div span{
     border-radius: 15px;
     font-size: 1rem;
     cursor: pointer;
-    
-    
-    
+    width: 100%;
 }
 
 .atc_button:hover {
