@@ -2,11 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    
 }
 #ghost_div{
     display: none;
 }
 body {
+    scroll-behavior: smooth;
     font-family: Arial, sans-serif;
 }
 .logo{
@@ -55,7 +57,7 @@ nav div span{
 
 .product_content {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     flex-wrap: wrap;
     align-items: center;
     
@@ -70,6 +72,7 @@ nav div span{
     border: solid 1px rgb(235, 235, 235);
     border-radius: 15px;
 }
+
 
 .product-card:hover {
     transform: translateY(-5px);
@@ -87,8 +90,8 @@ nav div span{
 
 .product-info {
     margin: 10px 10px 10px 0;
-    opacity: 80%;
-    height: 150px;
+    opacity: 70%;
+    height: 190px;
     
 }
 
@@ -129,23 +132,25 @@ nav div span{
 
 
 .search-container {
+    display: flex;
+    
     margin-bottom: 20px;
 }
 
-#search-form {
-    display: flex;
-    gap: 10px;
-}
+
 
 #search-input {
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: none;
+    outline: none;
     border-radius: 4px;
     font-size: 16px;
+    
 }
 
-#search-form button {
+
+button {
     padding: 10px 20px;
     background-color: #6F4E37;
     color: white;
@@ -155,8 +160,29 @@ nav div span{
     font-size: 16px;
 }
 
-#search-form button:hover {
+button:hover {
     background-color: #5D4037;
 }
 
+#grid:hover{
+    cursor: pointer;
 
+}
+#list:hover{
+    cursor: pointer;
+
+
+}
+.input_container{
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-right: 10px;
+    padding-right: 10px ;
+}
+#clear_btn{
+    opacity: 70%;
+    visibility: hidden;
+}
+#clear_btn:hover{
+    cursor: pointer;
+}

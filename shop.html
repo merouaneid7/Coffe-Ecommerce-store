@@ -6,33 +6,36 @@
     <title>Boutique de Café</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="container">
+<body onlo>
+    <div class="container" >
         <nav class="top-nav">
             <div class="logo">Terres de Café</div>
             <div class="nav-items">
                 <span>Capsules</span>
                 <span>Grain</span>
             </div>
-            <div class="cart-icon"> <img src="img/icons8-shopping-basket-80.png" width="40px" srcset=""></div>
+            <div class="cart-icon"> <img src="img/icons8-shopping-basket-80.png" width="40px" ></div>
         </nav>
         
         <div class="content">
             <div class="filter-bar">
                 <div class="search-container">
-                    <form id="search-form">
-                        <input type="text" id="search-input" placeholder="Rechercher un café...">
-                        <button type="submit">Rechercher</button>
-                    </form>
+                    
+                        <div class="input_container">
+                            <input type="text" id="search-input" placeholder="Rechercher un café..." >
+                            <span onclick="clearBtn()" id="clear_btn">x</span>
+                        </div>
+                        <button onclick="filterProducts()" >Rechercher</button>
+                    
                 </div>
                 <div class="filter-icons">
-                    <span><img src="img/icons8-grid-24.png" id='grid' alt="" srcset=""></span>
-                    <span><img src="img/icons8-list-24.png" id="list" srcset=""></span>
+                    <span><img src="img/icons8-grid-24.png" id='grid' alt=""  onclick="setListView()"></span>
+                    <span><img src="img/icons8-list-24.png" id="list" onclick="setGridView() " ></span>
                 </div>
             </div>
             
             <div class="product_content" id="product_content">
-                <div class="product-card" id="ghost_div">
+                <div class="product-card" id="ghost_div" >
                     
                 </div>
                 
