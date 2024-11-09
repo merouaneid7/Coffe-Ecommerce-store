@@ -180,9 +180,10 @@ button:hover {
     padding-right: 10px ;
 }
 #clear_btn{
-    opacity: 70%;
+    opacity: 60%;
     visibility: hidden;
 }
 #clear_btn:hover{
     cursor: pointer;
+    opacity: 80%;
 }
