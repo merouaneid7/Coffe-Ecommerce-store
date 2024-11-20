@@ -170,7 +170,7 @@ async function  addToCart(productId){
         let tx = res.transaction("cart","readwrite");
         let store = tx.objectStore("cart");
         store.add(cartItem);
-        console.log(`produit  ${cartItem.id} ajoutee a la carte avec succes`);
+        console.log(`produit  ${cartItem.id} ajoutee a la carte avec succe`);
         
     }
 
