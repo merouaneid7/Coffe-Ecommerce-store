@@ -1,0 +1,36 @@
+#back_home_button{
+    text-decoration: none;
+    color: black;
+}
+.cart_content{
+    margin-top: 50px;
+}
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+#table_title{
+    border-bottom: 0.1px solid ;
+    padding-bottom:  15px;
+    margin-bottom:  25px;
+     
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+td {
+    display: flex;
+    align-items: center;
+    
+}
+
+#pro{
+    width: 30%;
+}
+.image_name_td{
+    width: 29%;
+}

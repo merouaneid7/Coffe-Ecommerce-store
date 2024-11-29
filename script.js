@@ -57,6 +57,7 @@ function createProductCard(product) {
 async function displayProducts(products) {
     var product_content = document.getElementById("product_content"); 
     products.forEach(product => {
+        console.log(product);
         var card = createProductCard(product);
         product_content.appendChild(card);
     });
@@ -170,11 +171,9 @@ async function  addToCart(productId){
         let tx = res.transaction("cart","readwrite");
         let store = tx.objectStore("cart");
         store.add(cartItem);
-        console.log(`produit  ${cartItem.id} ajoutee a la carte avec succe`);
+        console.log(`produit  ${cartItem.id} ajoutee a la carte avec succes`);
         
     }
 
 }
-
-
 
