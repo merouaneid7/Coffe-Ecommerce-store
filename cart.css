@@ -32,5 +32,30 @@ td {
     width: 30%;
 }
 .image_name_td{
-    width: 29%;
+    width: 31%;
+}
+span{
+    width: 25px;
+    height: 22px;
+    border: solid 1px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 6px;
+}
+span:hover{
+    cursor: pointer;
+}
+.total_div{
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+.delbut{
+    opacity: 50%;
+
+}
+.delbut:hover{
+    cursor: pointer;
+    opacity: 100%;
 }
